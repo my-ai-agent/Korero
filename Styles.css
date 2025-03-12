@@ -1,0 +1,204 @@
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #f5f5f5; /* Light gray background like your banner */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #1a4d3c; /* Your brand green as a subtle border */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 60px; /* Adjust based on your preference */
+    margin-right: 15px;
+}
+
+.site-title {
+    color: #1a4d3c; /* Your brand green for text */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tagline {
+    color: #1a4d3c;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: #1a4d3c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #0d2b20;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    color: #1a4d3c;
+    margin-bottom: 30px;
+}
+
+/* Dot Pattern Background */
+.dot-pattern-bg {
+    position: relative;
+}
+
+.dot-pattern-bg::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: url('images/korero-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Call to Action Buttons */
+.cta-button {
+    background-color: #1a4d3c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #133a2d;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 40px 0;
+}
+
+.content-section h2 {
+    color: #1a4d3c;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1a4d3c;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container {
+        margin-bottom: 15px;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav li {
+        margin: 10px 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+}

@@ -13,7 +13,75 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Brand Header Enhancement */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+.logo-container img {
+  max-height: 80px;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004d40; /* Deep teal - representing cultural depth */
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Navigation Enhancement */
+.main-nav {
+  background-color: #004d40;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  background-color: #00695c;
+  border-radius: 5px;
+}
+
+/* Cultural Elements - inspired by Māori design patterns */
+.site-header::after {
+  content: "";
+  display: block;
+  height: 15px;
+  background: linear-gradient(90deg, #004d40 25%, transparent 25%) 0 0,
+              linear-gradient(90deg, #00695c 25%, transparent 25%) 0 0;
+  background-size: 20px 20px;
+  margin-top: 15px;
+}
 /* Header Styling */
 .site-header {
     background-color: #f5f5f5; /* Light gray background like your banner */

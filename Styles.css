@@ -270,3 +270,182 @@ body {
         text-align: center;
     }
 }
+/* Bonus Page Styling *//* Bonus page styling */
+.bonus-header {
+    margin: 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #004d40;
+}
+
+.prompt-section {
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.prompt-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    /* Blog post styling */
+.blog-post {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 10px;
+}
+
+.bonus-link {
+    color: #004d40;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px dotted #004d40;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.bonus-link:hover {
+    background-color: #e0f2f1;
+}
+
+/* Bonus page styling */
+.bonus-content {
+    background-color: #e0f2f1;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.download-section, .cta-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.download-button, .cta-button {
+    display: inline-block;
+    background-color: #004d40;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover, .cta-button:hover {
+    background-color: #00695c;
+}
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.prompt-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.prompt-code {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
+
+.copy-button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.copy-button:hover {
+    background-color: #00695c;
+}
+
+.instructions {
+    margin: 30px 0;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.example {
+    background-color: #e0f2f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.chat-mockup {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.chat-message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.customer {
+    background-color: #f1f1f1;
+    margin-right: auto;
+}
+
+.bot {
+    background-color: #e1f5fe;
+    margin-left: auto;
+}
+
+.cta-section {
+    background-color: #004d40;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #004d40;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0f2f1;
+    transform: scale(1.05);
+}

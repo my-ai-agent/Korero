@@ -9,42 +9,42 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1200 px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20 px;
 }
 /* Brand Header Enhancement */
 .logo-container {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 15 px;
 }
 
 .logo-container img {
-  max-height: 80px;
-  margin-right: 15px;
+  max-height: 80 px;
+  margin-right: 15 px;
 }
 
 .site-title {
-  font-size: 2.5rem;
+  font-size: 2.5 rem;
   font-weight: 700;
   color: #004d40; /* Deep teal - representing cultural depth */
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 1 px;
 }
 
 .tagline {
-  font-size: 1rem;
+  font-size: 1 rem;
   color: #555;
   font-style: italic;
-  margin-top: 5px;
+  margin-top: 5 px;
 }
 
 /* Navigation Enhancement */
 .main-nav {
   background-color: #004d40;
-  border-radius: 5px;
-  margin: 15px 0;
+  border-radius: 5 px;
+  margin: 15 px 0;
 }
 
 .main-nav ul {
@@ -62,34 +62,34 @@ body {
 .main-nav a {
   color: white;
   text-decoration: none;
-  padding: 12px 20px;
+  padding: 12 px 20 px;
   display: block;
-  transition: background-color 0.3s;
+  transition: background-color 0.3 s;
 }
 
 .main-nav a:hover {
   background-color: #00695c;
-  border-radius: 5px;
+  border-radius: 5 px;
 }
 
 /* Cultural Elements - inspired by Māori design patterns */
 .site-header::after {
   content: "";
   display: block;
-  height: 15px;
-  background: linear-gradient(90deg, #004d40 25%, transparent 25%) 0 0,
-              linear-gradient(90deg, #00695c 25%, transparent 25%) 0 0;
-  background-size: 20px 20px;
-  margin-top: 15px;
+  height: 15 px;
+  background: linear-gradient (90 deg, #004d40 25 %, transparent 25 %) 0 0,
+              linear-gradient (90 deg, #00695c 25 %, transparent 25 %) 0 0;
+  background-size: 20 px 20 px;
+  margin-top: 15 px;
 }
 /* Header Styling */
 .site-header {
     background-color: #f5f5f5; /* Light gray background like your banner */
-    padding: 20px 0;
+    padding: 20 px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #1a4d3c; /* Your brand green as a subtle border */
+    border-bottom: 2 px solid #1a4d3c; /* Your brand green as a subtle border */
 }
 
 .logo-container {
@@ -98,13 +98,13 @@ body {
 }
 
 .logo-container img {
-    height: 60px; /* Adjust based on your preference */
-    margin-right: 15px;
+    height: 60 px; /* Adjust based on your preference */
+    margin-right: 15 px;
 }
 
 .site-title {
     color: #1a4d3c; /* Your brand green for text */
-    font-size: 2.5rem;
+    font-size: 2.5 rem;
     font-weight: bold;
     margin: 0;
 }
@@ -112,8 +112,8 @@ body {
 .tagline {
     color: #1a4d3c;
     font-style: italic;
-    margin-top: 5px;
-    font-size: 1rem;
+    margin-top: 5 px;
+    font-size: 1 rem;
 }
 
 /* Navigation */
@@ -129,7 +129,7 @@ body {
 }
 
 .main-nav li {
-    margin-left: 20px;
+    margin-left: 20 px;
 }
 
 .main-nav a {
@@ -145,14 +145,14 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 60px 0;
+    padding: 60 px 0;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 1.8rem;
+    font-size: 1.8 rem;
     color: #1a4d3c;
-    margin-bottom: 30px;
+    margin-bottom: 30 px;
 }
 
 /* Dot Pattern Background */
@@ -163,10 +163,10 @@ body {
 .dot-pattern-bg::before {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 200px;
-    height: 200px;
+    top: 20 px;
+    left: 20 px;
+    width: 200 px;
+    height: 200 px;
     background-image: url('images/korero-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -178,13 +178,13 @@ body {
 .cta-button {
     background-color: #1a4d3c;
     color: white;
-    padding: 12px 24px;
+    padding: 12 px 24 px;
     border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 4 px;
+    font-size: 1 rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3 s ease;
 }
 
 .cta-button:hover {
@@ -193,21 +193,21 @@ body {
 
 /* Content Sections */
 .content-section {
-    padding: 40px 0;
+    padding: 40 px 0;
 }
 
 .content-section h2 {
     color: #1a4d3c;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2 rem;
+    margin-bottom: 20 px;
 }
 
 /* Footer */
 .site-footer {
     background-color: #1a4d3c;
     color: white;
-    padding: 30px 0;
-    margin-top: 40px;
+    padding: 30 px 0;
+    margin-top: 40 px;
 }
 
 .footer-content {
@@ -216,7 +216,7 @@ body {
 }
 
 .footer-logo img {
-    height: 40px;
+    height: 40 px;
 }
 
 .footer-nav ul {
@@ -225,7 +225,7 @@ body {
 }
 
 .footer-nav li {
-    margin-bottom: 10px;
+    margin-bottom: 10 px;
 }
 
 .footer-nav a {
@@ -234,21 +234,21 @@ body {
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20 px;
+    padding-top: 20 px;
+    border-top: 1 px solid rgba (255, 255, 255, 0.2);
     text-align: center;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@ media (max-width: 768px) {
     .site-header {
         flex-direction: column;
         text-align: center;
     }
     
     .logo-container {
-        margin-bottom: 15px;
+        margin-bottom: 15 px;
     }
     
     .main-nav ul {
@@ -257,7 +257,7 @@ body {
     }
     
     .main-nav li {
-        margin: 10px 0;
+        margin: 10 px 0;
     }
     
     .footer-content {
@@ -266,49 +266,49 @@ body {
     }
     
     .footer-nav {
-        margin-top: 20px;
+        margin-top: 20 px;
         text-align: center;
     }
 }
 /* Bonus Page Styling *//* Bonus page styling */
 .bonus-header {
-    margin: 30px 0;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #004d40;
+    margin: 30 px 0;
+    padding-bottom: 15 px;
+    border-bottom: 2 px solid #004d40;
 }
 
 .prompt-section {
-    margin: 30px 0;
+    margin: 30 px 0;
     background-color: #f9f9f9;
-    padding: 25px;
-    border-radius: 5px;
+    padding: 25 px;
+    border-radius: 5 px;
 }
 
 .prompt-box {
     background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
+    border: 1 px solid #ddd;
+    padding: 15 px;
     /* Blog post styling */
 .blog-post {
-    margin: 40px 0;
-    padding: 20px;
+    margin: 40 px 0;
+    padding: 20 px;
     background-color: #f9f9f9;
-    border-radius: 5px;
+    border-radius: 5 px;
 }
 
 .blog-post h2 {
     color: #004d40;
-    border-bottom: 2px solid #004d40;
-    padding-bottom: 10px;
+    border-bottom: 2 px solid #004d40;
+    padding-bottom: 10 px;
 }
 
 .bonus-link {
     color: #004d40;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px dotted #004d40;
-    padding-bottom: 2px;
-    transition: all 0.3s;
+    border-bottom: 2 px dotted #004d40;
+    padding-bottom: 2 px;
+    transition: all 0.3 s;
 }
 
 .bonus-link:hover {
@@ -318,16 +318,16 @@ body {
 /* Bonus page styling */
 .bonus-content {
     background-color: #e0f2f1;
-    padding: 25px;
-    border-radius: 5px;
-    margin: 30px 0;
+    padding: 25 px;
+    border-radius: 5 px;
+    margin: 30 px 0;
 }
 
 .download-section, .cta-section {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 30 px 0;
+    padding: 20 px;
     background-color: #f5f5f5;
-    border-radius: 5px;
+    border-radius: 5 px;
     text-align: center;
 }
 
@@ -335,34 +335,34 @@ body {
     display: inline-block;
     background-color: #004d40;
     color: white;
-    padding: 12px 25px;
+    padding: 12 px 25 px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5 px;
     font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+    margin-top: 15 px;
+    transition: background-color 0.3 s;
 }
 
 .download-button:hover, .cta-button:hover {
     background-color: #00695c;
 }
-    border-radius: 5px;
-    margin: 20px 0;
+    border-radius: 5 px;
+    margin: 20 px 0;
 }
 
 .prompt-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 10 px;
     color: #004d40;
 }
 
 .prompt-code {
     background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 15 px;
+    border-radius: 5 px;
     white-space: pre-wrap;
     font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
+    font-size: 0.9 rem;
     overflow-x: auto;
 }
 
@@ -370,10 +370,10 @@ body {
     background-color: #004d40;
     color: white;
     border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 8 px 15 px;
+    border-radius: 5 px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 10 px;
     font-weight: bold;
 }
 
@@ -382,36 +382,36 @@ body {
 }
 
 .instructions {
-    margin: 30px 0;
+    margin: 30 px 0;
 }
 
 .instructions ol {
-    padding-left: 20px;
+    padding-left: 20 px;
 }
 
 .instructions li {
-    margin-bottom: 10px;
+    margin-bottom: 10 px;
 }
 
 .example {
     background-color: #e0f2f1;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
+    padding: 20 px;
+    border-radius: 5 px;
+    margin: 20 px 0;
 }
 
 .chat-mockup {
     background-color: #fff;
-    border-radius: 5px;
-    padding: 15px;
-    margin-top: 15px;
+    border-radius: 5 px;
+    padding: 15 px;
+    margin-top: 15 px;
 }
 
 .chat-message {
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    max-width: 80%;
+    padding: 10 px 15 px;
+    border-radius: 15 px;
+    margin-bottom: 10 px;
+    max-width: 80 %;
 }
 
 .customer {
@@ -427,10 +427,10 @@ body {
 .cta-section {
     background-color: #004d40;
     color: white;
-    padding: 30px;
-    border-radius: 5px;
+    padding: 30 px;
+    border-radius: 5 px;
     text-align: center;
-    margin: 40px 0;
+    margin: 40 px 0;
 }
 
 .cta-button {
@@ -438,14 +438,14 @@ body {
     background-color: white;
     color: #004d40;
     font-weight: bold;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 12 px 25 px;
+    border-radius: 5 px;
     text-decoration: none;
-    margin-top: 15px;
-    transition: all 0.3s;
+    margin-top: 15 px;
+    transition: all 0.3 s;
 }
 
 .cta-button:hover {
     background-color: #e0f2f1;
-    transform: scale(1.05);
+    transform: scale (1.05);
 }

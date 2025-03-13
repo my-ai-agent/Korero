@@ -20,34 +20,81 @@
     </header>
 
     <nav class="main-nav">
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
     <main class="container">
-        <h2>KORERO BONUS Content</h2>
-        <p>Welcome to your exclusive bonus content for cultural tourism AI tools!</p>
-        
-        <!-- Add your bonus content here -->
-        <div class="bonus-content">
-            <h3>Premium AI Voice Bot Templates</h3>
-            <p>As a cultural tourism professional, these voice bot templates can save you 75% of development time while maintaining cultural integrity in your customer interactions.</p>
+        <div class="bonus-header">
+            <h2>KORERO BONUS: AI Voice Bot Templates</h2>
+            <p>Welcome to your exclusive bonus content from the AI Business Automation Coach!</p>
+        </div>
+
+        <div class="prompt-section">
+            <h3>Voice Bot Prompt Template</h3>
+            <p>This template is designed specifically for cultural tourism businesses looking to create AI voice bots that respect and honor cultural integrity.</p>
             
-            <!-- Download section -->
-            <div class="download-section">
-                <h4>Download Your Resources</h4>
-                <p>Click below to access your exclusive templates:</p>
-                <a href="#" class="download-button">Download Templates</a>
+            <div class="prompt-box">
+                <p class="prompt-title">Copy this prompt:</p>
+                <pre class="prompt-code">
+You are a cultural tourism voice assistant for [Your Company Name], a tourism business focused on authentic [Cultural/Indigenous] experiences in [Location].
+
+IMPORTANT GUIDELINES:
+1. Always respect and honor [Cultural/Indigenous] traditions and knowledge
+2. Speak in a warm, welcoming tone reflecting our cultural values
+3. When uncertain about cultural details, acknowledge limitations rather than guessing
+4. Recognize the importance of Matauranga Maori (traditional knowledge) in all interactions
+
+YOUR CAPABILITIES:
+- Provide information about our tours, activities, and cultural experiences
+- Answer questions about [Cultural/Indigenous] traditions and protocols
+- Assist with booking inquiries and availability
+- Share appropriate stories and cultural insights when relevant
+- Direct complex inquiries to human staff members
+
+KEY PHRASES IN [LANGUAGE]:
+- Welcome: [Translation]
+- Thank you: [Translation]
+- Goodbye: [Translation]
+- [Other culturally significant phrases]
+
+BUSINESS DETAILS:
+[Include 2-3 sentences about your specific offerings]
+
+When responding to customers, prioritize cultural respect while providing helpful, accurate information about our tourism experiences.
+                </pre>
+                <button class="copy-button" onclick="copyPrompt()">Copy to Clipboard</button>
             </div>
         </div>
-        
-        <!-- Call to action -->
+
+        <div class="instructions">
+            <h3>How to Use This Template with Claude</h3>
+            <ol>
+                <li>Copy the prompt template above</li>
+                <li>Go to <a href="https://claude.ai" target="_blank">Claude.ai</a> and sign in</li>
+                <li>Start a new conversation</li>
+                <li>Paste the prompt and customize the bracketed sections with your business details</li>
+                <li>Ask Claude to develop a complete voice script based on this prompt</li>
+                <li>Refine the responses until they perfectly match your cultural tourism brand</li>
+            </ol>
+            
+            <div class="example">
+                <h4>Example Voice Bot Interaction:</h4>
+                <div class="chat-mockup">
+                    <div class="chat-message customer">
+                        "Can you tell me about your cultural experiences and if they're appropriate for children?"
+                    </div>
+                    <div class="chat-message bot">
+                        "Kia ora! Our Whenua Heritage Experience is perfect for families with children aged 5 and up. This 2-hour guided tour introduces visitors to Māori traditions through interactive storytelling and hands-on activities. Children especially enjoy learning traditional weaving techniques and hearing stories of our ancestors. All our guides are experienced with young visitors and ensure cultural knowledge is shared in an age-appropriate and respectful manner. Would you like to know more about the specific activities or our available times?"
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="cta-section">
             <h3>Ready to Transform Your Cultural Tourism Business?</h3>
             <p>Book a free 30-minute AI Business Automation consultation and discover how to increase customer engagement by up to 45%.</p>
@@ -59,12 +106,25 @@
         <div class="container">
             <img src="Images/KORERO.png" alt="KORERO Logo" class="footer-logo">
             <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <p>© 2025 KORERO. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function copyPrompt() {
+            const promptText = document.querySelector('.prompt-code').innerText;
+            navigator.clipboard.writeText(promptText)
+                .then(() => {
+                    alert('Prompt copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+        }
+    </script>
 </body>
 </html>

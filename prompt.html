@@ -16,93 +16,93 @@
         }
         
         .container {
-            max-width: 800 px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2 rem;
+            padding: 2rem;
         }
         
         /* Header styles */
         .logo {
-            max-width: 180 px;
+            max-width: 180px;
             height: auto;
             display: block;
-            margin: 0 auto 1 rem;
+            margin: 0 auto 1rem;
         }
         
         h1 {
             color: #1b5e20;
             text-align: center;
-            margin-bottom: 0.5 rem;
+            margin-bottom: 0.5rem;
         }
         
         .tagline {
             font-style: italic;
             color: #2e7d32;
             text-align: center;
-            margin-bottom: 2 rem;
+            margin-bottom: 2rem;
         }
         
         /* Step styles */
         .steps {
             background-color: white;
-            border-radius: 8 px;
-            box-shadow: 0 2 px 10 px rgba (0, 0, 0, 0.1);
-            padding: 2 rem;
-            margin-bottom: 2 rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
         
         .step {
-            margin-bottom: 1.5 rem;
+            margin-bottom: 1.5rem;
         }
         
         .step-number {
             display: inline-block;
-            width: 30 px;
-            height: 30 px;
+            width: 30px;
+            height: 30px;
             background-color: #1b5e20;
             color: white;
-            border-radius: 50 %;
+            border-radius: 50%;
             text-align: center;
-            line-height: 30 px;
-            margin-right: 10 px;
+            line-height: 30px;
+            margin-right: 10px;
             font-weight: bold;
         }
         
         /* Prompt box styles */
         .prompt-box {
             background-color: #e8f5e9;
-            border-left: 4 px solid #1b5e20;
-            padding: 1.5 rem;
-            margin: 1.5 rem 0;
+            border-left: 4px solid #1b5e20;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
             font-family: monospace;
             white-space: pre-wrap;
             line-height: 1.4;
-            border-radius: 4 px;
+            border-radius: 4px;
         }
         
         /* Button styles */
         .button-container {
             display: flex;
-            gap: 1 rem;
-            margin: 2 rem 0;
+            gap: 1rem;
+            margin: 2rem 0;
         }
         
         .button {
             flex: 1;
-            padding: 1 rem;
+            padding: 1rem;
             border: none;
-            border-radius: 4 px;
+            border-radius: 4px;
             font-weight: bold;
-            font-size: 1 rem;
+            font-size: 1rem;
             cursor: pointer;
             text-align: center;
             text-decoration: none;
-            transition: transform 0.2 s, opacity 0.2 s;
+            transition: transform 0.2s, opacity 0.2s;
         }
         
         .button:hover {
             opacity: 0.9;
-            transform: translate Y (-2 px);
+            transform: translateY(-2px);
         }
         
         .copy-button {
@@ -111,18 +111,18 @@
         }
         
         .claude-button {
-            background-image: linear-gradient (45 deg, #388e3c 0 %, #2e7d32 100 %);
+            background-image: linear-gradient(45deg, #388e3c 0%, #2e7d32 100%);
             color: white;
         }
         
         /* Copy message */
         .copy-message {
-            height: 1.5 rem;
+            height: 1.5rem;
             color: #2e7d32;
             font-weight: 600;
             text-align: center;
             opacity: 0;
-            transition: opacity 0.3 s;
+            transition: opacity 0.3s;
         }
         
         .copy-message.visible {
@@ -132,9 +132,9 @@
         /* Footer */
         footer {
             text-align: center;
-            margin-top: 2 rem;
+            margin-top: 2rem;
             color: #666;
-            font-size: 0.9 rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -193,10 +193,10 @@ Please keep your suggestions very simple, with step-by-step instructions, and fo
     <script>
         // Simple copy functionality
         document.getElementById('copyButton').addEventListener('click', function() {
-            varpromptText = document.getElementById('promptText').innerText;
+            var promptText = document.getElementById('promptText').innerText;
             
             // Create a temporary textarea element to copy from
-            vartempTextArea = document.createElement('textarea');
+            var tempTextArea = document.createElement('textarea');
             tempTextArea.value = promptText;
             document.body.appendChild(tempTextArea);
             
@@ -208,11 +208,11 @@ Please keep your suggestions very simple, with step-by-step instructions, and fo
             document.body.removeChild(tempTextArea);
             
             // Show success message
-            varmessage = document.getElementById('copyMessage');
+            var message = document.getElementById('copyMessage');
             message.classList.add('visible');
             
             // Hide message after 3 seconds
-            setTimeoutfunction () {
+            setTimeout(function () {
                 message.classList.remove('visible');
             }, 3000);
         });

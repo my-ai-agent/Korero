@@ -80,32 +80,35 @@ Please keep your suggestions very simple, with step-by-step instructions, and fo
     </div>
 
     <script>
-        // Simple copy functionality
-        document.getElementById('copyButton').addEventListener('clickfunction() {
-            varpromptText = document.getElementById('promptText').innerText;
-            
-            // Create a temporary textarea element to copy from
-            vartempTextArea = document.createElement('textarea');
-            tempTextArea.value = promptText;
-            document.body.appendChild(tempTextArea);
-            
-            // Select and copy the text
-            tempTextArea.select();
-            document.execCommand('copy');
-            
-            // Remove the temporary element
-            document.body.removeChild(tempTextArea);
-            
-            // Show success message
-            varmessage = document.getElementById('copyMessage');
-            message.textContent = 'Prompt copied! Now click "Open Claude"';
-            message.classList.add('visible');
-            
-            // Hide message after 3 seconds
-            setTimeoutfunction() {
-                message.classList.remove('visible');
-            }, 3000);
-        });
-    </script>
-</body>
-</html>
+        <script>
+<script>
+    // Simple copy functionality
+    document.getElementById('copyButton').addEventListener('click', function() {
+        varpromptText = document.getElementById('promptText').innerText;
+        
+        // Create a temporary textarea element to copy from
+        vartempTextArea = document.createElement('textarea');
+        tempTextArea.value = promptText;
+        document.body.appendChild(tempTextArea);
+        
+        // Select and copy the text
+        tempTextArea.select();
+        document.execCommand('copy');
+        
+        // Remove the temporary element
+        document.body.removeChild(tempTextArea);
+        
+        // Show success message
+        varmessage = document.getElementById('copyMessage');
+        message.textContent = 'Prompt copied! Now click "Open Claude"';
+        message.classList.add('visible');
+        
+        // Hide message after 3 seconds
+setTimeout(function() {
+    message.classList.remove('visible');
+}, 3000);
+        setTimeout(function() {
+            message.classList.remove('visible');
+        }, 3000);
+    });
+</script>

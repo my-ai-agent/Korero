@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your First AI Conversation - Kōrero with Claude</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add analytics tracking if needed -->
-    <meta property="og:title" content="Begin Your AI Journey - Tourism Industry Guide">
-    <meta property="og:description" content="A simple tool to help tourism professionals start their AI journey with cultural integrity.">
-    <meta property="og:url" content="https://my-ai-agent.github.io/Korero/">
 </head>
 <body>
     <div class="container">
@@ -73,7 +69,7 @@ Please keep your suggestions very simple, with step-by-step instructions, and fo
             <section class="bonus-section">
                 <h3>Want More Guidance?</h3>
                 <p>Visit our <a href="bonus.html">bonus page</a> for additional prompts and tips for tourism businesses.</p>
-                <p>Ready for personalized guidance? <a href="https://www.linkedin.com/in/your-profile/" target="_blank">Connect with Michael</a> for AI Business Automation Coaching that respects cultural integrity.</p>
+                <p>Ready for personalized guidance? <a href="https://www.linkedin.com/in/michael-smith-ai-coach/" target="_blank">Connect with Michael</a> for AI Business Automation Coaching that respects cultural integrity.</p>
             </section>
         </main>
 
@@ -84,18 +80,31 @@ Please keep your suggestions very simple, with step-by-step instructions, and fo
     </div>
 
     <script>
-        // Copy functionality
-        document.getElementById('copyButton').addEventListener('click', function() {
-            const promptText = document.getElementById('promptText').innerText;
-            navigator.clipboard.writeText(promptText).then(function() {
-                const message = document.getElementById('copyMessage');
-                message.textContent = 'Prompt copied! Now click "Open Claude"';
-                message.classList.add('visible');
-                
-                setTimeout(function() {
-                    message.classList.remove('visible');
-                }, 3000);
-            });
+        // Simple copy functionality
+        document.getElementById('copyButton').addEventListener('clickfunction() {
+            varpromptText = document.getElementById('promptText').innerText;
+            
+            // Create a temporary textarea element to copy from
+            vartempTextArea = document.createElement('textarea');
+            tempTextArea.value = promptText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempTextArea);
+            
+            // Show success message
+            varmessage = document.getElementById('copyMessage');
+            message.textContent = 'Prompt copied! Now click "Open Claude"';
+            message.classList.add('visible');
+            
+            // Hide message after 3 seconds
+            setTimeoutfunction() {
+                message.classList.remove('visible');
+            }, 3000);
         });
     </script>
 </body>

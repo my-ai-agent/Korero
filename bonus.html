@@ -3,128 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KORERO BONUS - AI Tools for Cultural Tourism</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bonus Tourism AI Prompts - Kōrero with Claude</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
+    <div class="container">
+        <header>
             <div class="logo-container">
-                <img src="Images/KORERO.png" alt="KORERO Logo">
-                <div>
-                    <h1 class="site-title">KORERO</h1>
-                    <p class="tagline">my-cultural-ai-agent</p>
+                <img src="korero-logo.png" alt="Korero AI Business Automation Logo" class="logo">
+            </div>
+            <h1>Bonus Tourism AI Prompts</h1>
+            <p class="tagline">Navigating AI with Cultural Integrity</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Additional Prompts for Tourism Businesses</h2>
+                <p>These specialized prompts are designed to help tourism businesses enhance specific areas of their operations while maintaining cultural integrity.</p>
+                <p><a href="index.html">&larr; Return to main page</a></p>
+            </section>
+
+            <section class="prompt-section">
+                <h3>Tourism Award Application Prompt</h3>
+                <div class="prompt-box" id="awardPrompt">
+I'm preparing an application for a tourism industry award in [category/name of award]. My business focuses on [brief description of your tourism business].
+
+Key aspects I want to highlight include:
+- Our cultural integrity and sustainability practices
+- Our visitor experience and feedback (with [X]% satisfaction rate)
+- Our community impact and engagement
+- Our innovation in [specific area]
+
+Please help me structure my award application with:
+1. An outline of key sections to include
+2. Suggestions for how to present our data effectively
+3. Tips for making our cultural values and connection to place stand out
+4. A simple system to collect and organize supporting evidence
+
+Please keep suggestions practical for a small team with limited time.
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="container">
-        <div class="bonus-header">
-            <h2>KORERO BONUS: AI Voice Bot Templates</h2>
-            <p>Welcome to your exclusive bonus content from the AI Business Automation Coach!</p>
-        </div>
-
-        <div class="prompt-section">
-            <h3>Voice Bot Prompt Template</h3>
-            <p>This template is designed specifically for cultural tourism businesses looking to create AI voice bots that respect and honor cultural integrity.</p>
-            
-            <div class="prompt-box">
-                <p class="prompt-title">Copy this prompt:</p>
-                <pre class="prompt-code">
-You are a cultural tourism voice assistant for [Your Company Name], a tourism business focused on authentic [Cultural/Indigenous] experiences in [Location].
-
-IMPORTANT GUIDELINES:
-1. Always respect and honor [Cultural/Indigenous] traditions and knowledge
-2. Speak in a warm, welcoming tone reflecting our cultural values
-3. When uncertain about cultural details, acknowledge limitations rather than guessing
-4. Recognize the importance of Matauranga Maori (traditional knowledge) in all interactions
-
-YOUR CAPABILITIES:
-- Provide information about our tours, activities, and cultural experiences
-- Answer questions about [Cultural/Indigenous] traditions and protocols
-- Assist with booking inquiries and availability
-- Share appropriate stories and cultural insights when relevant
-- Direct complex inquiries to human staff members
-
-KEY PHRASES IN [LANGUAGE]:
-- Welcome: [Translation]
-- Thank you: [Translation]
-- Goodbye: [Translation]
-- [Other culturally significant phrases]
-
-BUSINESS DETAILS:
-[Include 2-3 sentences about your specific offerings]
-
-When responding to customers, prioritize cultural respect while providing helpful, accurate information about our tourism experiences.
-                </pre>
-                <button class="copy-button" onclick="copyPrompt()">Copy to Clipboard</button>
-            </div>
-        </div>
-
-        <div class="instructions">
-            <h3>How to Use This Template with Claude</h3>
-            <ol>
-                <li>Copy the prompt template above</li>
-                <li>Go to <a href="https://claude.ai" target="_blank">Claude.ai</a> and sign in</li>
-                <li>Start a new conversation</li>
-                <li>Paste the prompt and customize the bracketed sections with your business details</li>
-                <li>Ask Claude to develop a complete voice script based on this prompt</li>
-                <li>Refine the responses until they perfectly match your cultural tourism brand</li>
-            </ol>
-            
-            <div class="example">
-                <h4>Example Voice Bot Interaction:</h4>
-                <div class="chat-mockup">
-                    <div class="chat-message customer">
-                        "Can you tell me about your cultural experiences and if they're appropriate for children?"
-                    </div>
-                    <div class="chat-message bot">
-                        "Kia ora! Our Whenua Heritage Experience is perfect for families with children aged 5 and up. This 2-hour guided tour introduces visitors to Māori traditions through interactive storytelling and hands-on activities. Children especially enjoy learning traditional weaving techniques and hearing stories of our ancestors. All our guides are experienced with young visitors and ensure cultural knowledge is shared in an age-appropriate and respectful manner. Would you like to know more about the specific activities or our available times?"
-                    </div>
+                <div class="button-container">
+                    <button id="copyAwardButton" class="action-button">Copy Award Prompt</button>
+                    <a href="https://claude.ai/" target="_blank" class="action-button" id="claudeButton">Open Claude</a>
                 </div>
-            </div>
-        </div>
+                <div id="awardCopyMessage" class="copy-message"></div>
+            </section>
 
-        <div class="cta-section">
-            <h3>Ready to Transform Your Cultural Tourism Business?</h3>
-            <p>Book a free 30-minute AI Business Automation consultation and discover how to increase customer engagement by up to 45%.</p>
-            <a href="contact.html" class="cta-button">Book Your Consultation</a>
-        </div>
-    </main>
+            <section class="prompt-section">
+                <h3>Visitor Experience Enhancement Prompt</h3>
+                <div class="prompt-box" id="visitorPrompt">
+I run a [type] tourism experience focused on sharing [cultural/natural] aspects of [location/region]. We want to enhance our visitor journey while maintaining authenticity.
 
-    <footer>
-        <div class="container">
-            <img src="Images/KORERO.png" alt="KORERO Logo" class="footer-logo">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <p>© 2025 KORERO. All rights reserved.</p>
-        </div>
-    </footer>
+Our current visitor experience includes:
+- [Brief description of current experience]
+- Approximately [X] visitors per [day/week/month]
+- [X]% international visitors and [X]% domestic visitors
+
+Please suggest:
+1. Three simple ways to enhance our visitor experience that respect cultural integrity
+2. How we might better communicate our cultural values to visitors before they arrive
+3. A system for gathering more meaningful visitor feedback that goes beyond satisfaction ratings
+
+Please focus on solutions that don't require major technology investments.
+                </div>
+                <div class="button-container">
+                    <button id="copyVisitorButton" class="action-button">Copy Visitor Prompt</button>
+                    <a href="https://claude.ai/" target="_blank" class="action-button" id="claudeButton">Open Claude</a>
+                </div>
+                <div id="visitorCopyMessage" class="copy-message"></div>
+            </section>
+
+            <section class="tips">
+                <h3>Tips for Getting the Best Results:</h3>
+                <ol>
+                    <li><strong>Be specific</strong> - Edit the prompts to include details about your specific tourism operation</li>
+                    <li><strong>Ask follow-up questions</strong> - If the AI's response needs clarification, ask it to explain or elaborate</li>
+                    <li><strong>Request examples</strong> - Ask for concrete examples that relate to your specific context</li>
+                    <li><strong>Iterate</strong> - Use the AI's response as a starting point, then refine with additional prompts</li>
+                    <li><strong>Maintain cultural oversight</strong> - Always review AI suggestions through your cultural lens</li>
+                </ol>
+            </section>
+
+            <section class="next-steps">
+                <h3>Ready for More Personalized Guidance?</h3>
+                <p>Book your "AI Tourism Strategy Session" with Michael to get customized guidance for your specific tourism business needs.</p>
+                <p>Learn how to integrate AI tools while maintaining and enhancing your cultural integrity and authentic tourism offerings.</p>
+                <p><a href="https://www.linkedin.com/in/michael-smith-ai-coach/" target="_blank" class="action-button">Connect on LinkedIn</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created by Michael - Navigating AI with Cultural Integrity</p>
+            <p class="small">© 2025 - AI Business Automation Coach</p>
+        </footer>
+    </div>
 
     <script>
-        function copyPrompt() {
-            const promptText = document.querySelector('.prompt-code').innerText;
-            navigator.clipboard.writeText(promptText)
-                .then(() => {
-                    alert('Prompt copied to clipboard!');
-                })
-                .catch(err => {
-                    console.error('Failed to copy: ', err);
-                });
-        }
+        // Simple copy functionality for award prompt
+        document.getElementById('copyAwardButton').addEventListener('clickfunction' () {
+            varpromptText = document.getElementById('awardPrompt').innerText;
+            
+            // Create a temporary textarea element to copy from
+            vartempTextArea = document.createElement('textarea');
+            tempTextArea.value = promptText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempTextArea);
+            
+            // Show success message
+            varmessage = document.getElementById('awardCopyMessage');
+            message.textContent = 'Award prompt copied! Now click "Open Claude"';
+            message.classList.add('visible');
+            
+            // Hide message after 3 seconds
+            setTimeoutfunction() {
+                message.classList.remove('visible');
+            }, 3000);
+        });
+
+        // Simple copy functionality for visitor prompt
+        document.getElementById('copyVisitorButton').addEventListener('clickfunction() {
+            varpromptText = document.getElementById('visitorPrompt').innerText;
+            
+            // Create a temporary textarea element to copy from
+            vartempTextArea = document.createElement('textarea');
+            tempTextArea.value = promptText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempTextArea);
+            
+            // Show success message
+            varmessage = document.getElementById('visitorCopyMessage');
+            message.textContent = 'Visitor prompt copied! Now click "Open Claude"';
+            message.classList.add('visible');
+            
+            // Hide message after 3 seconds
+            setTimeoutfunction() {
+                message.classList.remove('visible');
+            }, 3000);
+        });
     </script>
 </body>
 </html>

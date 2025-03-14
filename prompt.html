@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To AI Kōrero - Simple Steps</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800 px;
+            margin: 0 auto;
+            padding: 2 rem;
+        }
+        
+        /* Header styles */
+        .logo {
+            max-width: 180 px;
+            height: auto;
+            display: block;
+            margin: 0 auto 1 rem;
+        }
+        
+        h1 {
+            color: #1b5e20;
+            text-align: center;
+            margin-bottom: 0.5 rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 2 rem;
+        }
+        
+        /* Step styles */
+        .steps {
+            background-color: white;
+            border-radius: 8 px;
+            box-shadow: 0 2 px 10 px rgba (0, 0, 0, 0.1);
+            padding: 2 rem;
+            margin-bottom: 2 rem;
+        }
+        
+        .step {
+            margin-bottom: 1.5 rem;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30 px;
+            height: 30 px;
+            background-color: #1b5e20;
+            color: white;
+            border-radius: 50 %;
+            text-align: center;
+            line-height: 30 px;
+            margin-right: 10 px;
+            font-weight: bold;
+        }
+        
+        /* Prompt box styles */
+        .prompt-box {
+            background-color: #e8f5e9;
+            border-left: 4 px solid #1b5e20;
+            padding: 1.5 rem;
+            margin: 1.5 rem 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            line-height: 1.4;
+            border-radius: 4 px;
+        }
+        
+        /* Button styles */
+        .button-container {
+            display: flex;
+            gap: 1 rem;
+            margin: 2 rem 0;
+        }
+        
+        .button {
+            flex: 1;
+            padding: 1 rem;
+            border: none;
+            border-radius: 4 px;
+            font-weight: bold;
+            font-size: 1 rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.2 s, opacity 0.2 s;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
+            transform: translate Y (-2 px);
+        }
+        
+        .copy-button {
+            background-color: #1b5e20;
+            color: white;
+        }
+        
+        .claude-button {
+            background-image: linear-gradient (45 deg, #388e3c 0 %, #2e7d32 100 %);
+            color: white;
+        }
+        
+        /* Copy message */
+        .copy-message {
+            height: 1.5 rem;
+            color: #2e7d32;
+            font-weight: 600;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3 s;
+        }
+        
+        .copy-message.visible {
+            opacity: 1;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 2 rem;
+            color: #666;
+            font-size: 0.9 rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="korero-logo.png" alt="Korero AI Business Automation Logo" class="logo">
+            <h1>Your First AI Kōrero</h1>
+            <p class="tagline">Navigating AI with Cultural Integrity</p>
+        </header>
+        
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">A</span>
+                <strong>Copy this prompt</strong> by clicking the green button below
+            </div>
+            
+            <div class="prompt-box" id="promptText">
+I offer cultural tourism experiences sharing my [Māori/Aboriginal/Pacific] heritage with visitors. My business focuses on [cultural storytelling/traditional arts/guided experience/etc.].
+
+I want to maintain the authenticity and cultural integrity of what we do, while making the business side easier to manage.
+
+Please suggest:
+1. One simple way to reduce my paperwork time using easy-to-learn technology
+2. How I might track and organize visitor feedback more efficiently
+3. A respectful way to reach international visitors who would value our cultural experience
+
+Please keep your suggestions very simple, with step-by-step instructions, and focus on tools that are free or low-cost to start with.
+            </div>
+            
+            <div class="step">
+                <span class="step-number">B</span>
+                <strong>Visit Claude AI</strong> by clicking the dark green button below
+            </div>
+            
+            <div class="step">
+                <span class="step-number">C</span>
+                <strong>Paste the prompt</strong> by right-clicking in Claude's message area and selecting "Paste" (or press Ctrl+V on your keyboard)
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button id="copyButton" class="button copy-button">Copy Prompt</button>
+            <a href="https://claude.ai/" target="_blank" class="button claude-button">Open Claude</a>
+        </div>
+        
+        <div id="copyMessage" class="copy-message">Prompt copied! Now click "Open Claude"</div>
+        
+        <footer>
+            <p>Created by Michael - Navigating AI with Cultural Integrity</p>
+            <p>© 2025 - AI Business Automation Coach</p>
+            <p><a href="index.html">Want more AI prompts? Visit our main page</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        // Simple copy functionality
+        document.getElementById('copyButton').addEventListener('click', function() {
+            varpromptText = document.getElementById('promptText').innerText;
+            
+            // Create a temporary textarea element to copy from
+            vartempTextArea = document.createElement('textarea');
+            tempTextArea.value = promptText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempTextArea);
+            
+            // Show success message
+            varmessage = document.getElementById('copyMessage');
+            message.classList.add('visible');
+            
+            // Hide message after 3 seconds
+            setTimeoutfunction () {
+                message.classList.remove('visible');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

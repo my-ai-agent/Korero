@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Bot Prompt - Kōrero with Claude</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="korero-logo.png" alt="Korero AI Business Automation Logo" class="logo">
+            </div>
+            <h1>Your First AI Voice Conversation</h1>
+            <p class="tagline">Navigating AI with Cultural Integrity</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Get Started with AI Voice Technology for Your Tourism Operation</h2>
+                <p>If you've never tried AI voice, here's a simple way to begin that respects your cultural tourism context, just following these instructions:</p>
+                <p><a href="index.html">&larr; Return to main page</a></p>
+            </section>
+
+            <section class="steps-section">
+                <h3>Simple Steps to Begin:</h3>
+                <ol class="steps">
+                    <li>Copy the AI Voice Bot prompt below using the "Copy Voice Bot Prompt" button</li>
+                    <li>Click the "Open Claude" button to open Claude in a new tab</li>
+                    <li>To use Claude Voice, click on the microphone icon in the message input box and speak your question</li>
+                    <li>Listen to Claude's response or read the text version</li>
+                    <li>Customize the prompt for your specific tourism operation</li>
+                </ol>
+            </section>
+
+            <section class="prompt-section">
+                <h3>AI Voice Bot Implementation Prompt</h3>
+                <div class="prompt-box" id="voiceBotPrompt">
+You are a helpful AI voice assistant for [your tourism operation name], a [brief description of your tourism experience] located in [your location].
+
+Your role is to assist potential visitors with:
+1. Basic booking information for our [list top 3 experiences]
+2. Accurate pronunciation of significant place names including [list 3-5 important local place names]
+3. Authentic sharing of our cultural stories, particularly about [name 1-2 key cultural elements]
+4. Practical visitor information such as [operating hours, what to bring, accessibility]
+
+When discussing cultural elements, always:
+- Acknowledge the source of cultural knowledge (e.g., "According to local [iwi/hapū name] traditions...")
+- Provide contextual information before introducing te reo Māori terms
+- Express that deeper cultural experiences are best experienced in person with our cultural guides
+
+For bookings, collect:
+- Number of visitors and any special requirements
+- Preferred date and time
+- Contact information for confirmation
+
+Always close conversations by asking if there's anything else the visitor would like to know, and offer to connect them with our team for more personalized assistance.
+                </div>
+                <div class="button-container">
+                    <button id="copyVoiceBotButton" class="action-button">Copy Voice Bot Prompt</button>
+                    <a href="https://claude.ai/" target="_blank" class="action-button" id="claudeButton">Open Claude</a>
+                </div>
+                <div id="voiceBotCopyMessage" class="copy-message"></div>
+            </section>
+
+            <section class="tips">
+                <h3>Tips for Getting the Best Results with Voice AI:</h3>
+                <ol>
+                    <li><strong>Be specific</strong> - Edit the prompt to include details about your specific tourism operation</li>
+                    <li><strong>Test pronunciation</strong> - Have the AI pronounce key te reo Māori terms and correct as needed</li>
+                    <li><strong>Maintain cultural context</strong> - Ensure cultural elements are introduced with proper context</li>
+                    <li><strong>Use natural language</strong> - Speak to the AI as you would to a new staff member</li>
+                    <li><strong>Iterate and refine</strong> - Use the initial responses to improve your prompts over time</li>
+                </ol>
+            </section>
+
+            <section class="measuring-section">
+                <h3>Measuring Success with Your Voice AI Implementation</h3>
+                <p>Track these metrics to evaluate your voice AI implementation:</p>
+                <ul>
+                    <li>After-hours inquiries converted to bookings (%)</li>
+                    <li>Average response time (minutes)</li>
+                    <li>Staff time spent on routine inquiries (hours/week)</li>
+                    <li>Visitor satisfaction rating (1-10)</li>
+                    <li>Cultural authenticity rating (1-10)</li>
+                    <li>Revenue from international bookings ($)</li>
+                </ul>
+            </section>
+
+            <section class="next-steps">
+                <h3>Ready for AI Voice Implementation?</h3>
+                <p>Book your "AI Voice Implementation Strategy Session" with Michael to get customized guidance for your specific tourism operation.</p>
+                <p>Only <strong>FOUR SPOTS</strong> available next week! Don't miss this opportunity to:</p>
+                <ul>
+                    <li>Receive a customised AI Voice Strategy Framework tailored to your specific operation</li>
+                    <li>Get expert guidance on selecting the right voice technology for your business needs</li>
+                    <li>Walk away with a comprehensive implementation roadmap (value $1,275)</li>
+                </ul>
+                <p><a href="https://www.linkedin.com/in/michael-gibbons-nz/" target="_blank" class="action-button">Connect on LinkedIn</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created by Michael Gibbons - Navigating AI with Cultural Integrity</p>
+            <p class="small">© 2025 - AI Business Automation Coach</p>
+        </footer>
+    </div>
+
+    <script>
+        // Voice Bot prompt copy functionality
+        document.getElementById('copyVoiceBotButton').addEventListener('click', function() {
+            const promptText = document.getElementById('voiceBotPrompt').innerText;
+            
+            // Create a temporary textarea element to copy from
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = promptText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(tempTextArea);
+            
+            // Show success message
+            const message = document.getElementById('voiceBotCopyMessage');
+            message.textContent = 'Voice Bot prompt copied! Now click "Open Claude"';
+            message.classList.add('visible');
+            
+            // Hide message after 3 seconds
+            setTimeout(function() {
+                message.classList.remove('visible');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
